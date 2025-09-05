@@ -1,6 +1,6 @@
 Package: important
 Title: Supervised Feature Selection
-Version: 0.0.1
+Version: 0.2.0
 Authors@R: c(
     person("Max", "Kuhn", , "max@posit.co", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2402-136X")),
@@ -16,11 +16,12 @@ License: MIT + file LICENSE
 URL: https://important.tidymodels.org/,
         https://github.com/tidymodels/important
 BugReports: https://github.com/tidymodels/important/issues
-Depends: R (>= 4.1.0)
-Imports: cli, dplyr, generics, ggplot2, hardhat (>= 1.4.1), purrr,
-        rlang, tibble, tidyr, tune, vctrs, withr, workflows
+Depends: R (>= 4.1.0), recipes (>= 1.1.0)
+Imports: cli, desirability2 (>= 0.2.0), dplyr, filtro (>= 0.2.0),
+        generics, ggplot2, hardhat (>= 1.4.1), purrr, rlang (>= 1.1.0),
+        S7, tibble, tidyr, tune, vctrs, withr, workflows
 Suggests: censored, future, future.apply, mirai, modeldata, parsnip,
-        recipes, spelling, survival, testthat (>= 3.0.0), yardstick
+        ranger, spelling, survival, testthat (>= 3.0.0), yardstick
 Config/Needs/website: tidyverse/tidytemplate, tidymodels
 Config/testthat/edition: 3
 Config/usethis/last-upkeep: 2025-06-09
@@ -28,9 +29,9 @@ Encoding: UTF-8
 Language: en-US
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-08-18 11:30:49 UTC; max
+Packaged: 2025-09-05 12:39:30 UTC; max
 Author: Max Kuhn [aut, cre] (ORCID: <https://orcid.org/0000-0003-2402-136X>),
   Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
 Maintainer: Max Kuhn <max@posit.co>
 Repository: CRAN
-Date/Publication: 2025-08-20 17:10:10 UTC
+Date/Publication: 2025-09-05 18:30:02 UTC
